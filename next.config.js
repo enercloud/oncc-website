@@ -2,7 +2,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: './out',
+  basePath: '/',
 }
 
 module.exports = nextConfig
