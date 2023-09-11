@@ -39,11 +39,9 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build with Next.js
-        run: next build
-      - name: Static HTML export with Next.js
-        run: next export
+        run: yarn next build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
 
